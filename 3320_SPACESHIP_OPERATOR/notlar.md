@@ -25,4 +25,14 @@ Fonksiyonların default edilmesi durumunda;
 * Karşılaştırma işlemleri derleme zamanında yapılabiliyor ise fonksiyonlar constexpr
 * rewriting söz konusu olduğundan birinci operand (sol operand) için de örtülü dönüşüm yapılabiliyor.
 * Fonksiyonun geri dönüş değerinin kullanılmaması durumunda derleyici uyarı mesajı evrecek.
-* Yani fonksiyon [[nodiscard]] attribute ile bildirilmiş kabul ediliyor
+* Yani fonksiyon [[nodiscard]] attribute ile bildirilmiş kabul ediliyor.
+
+<=> operatörünün önceliği diğer karşılaştırma operatörlerinden daha yüksek.
+
+<=> operatörünün ürettiği değer bir tam sayı türünden değil.
+Operatörün ürettiği değer karşılaştırma kategorisine ilişkin. Operaötrün ürettiği değer aşağıdaki türlerden birinden olmak zorunda:
+* strong ordering
+* weak ordering
+* partial ordering
+
+Bu türler 0 ile karşılaştırılabiliyorlar.
