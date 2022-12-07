@@ -27,12 +27,11 @@ Fonksiyonların default edilmesi durumunda;
 * Fonksiyonun geri dönüş değerinin kullanılmaması durumunda derleyici uyarı mesajı evrecek.
 * Yani fonksiyon [[nodiscard]] attribute ile bildirilmiş kabul ediliyor.
 
-<=> operatörünün önceliği diğer karşılaştırma operatörlerinden daha yüksek.
-
-<=> operatörünün ürettiği değer bir tam sayı türünden değil.
-Karşılaştırma kategorisine ilişkin olan operatörün ürettiği değer aşağıdaki türlerden birinden olmak zorunda:
-* strong ordering
-* weak ordering
-* partial ordering
+* <=> C++20 standartları ile dile eklenen yeni bir _binary_ operatör.
+* <=> operatörünün önceliği diğer karşılaştırma operatörlerinden daha yüksek.
+* <=> operatörünün ürettiği değer bir tam sayı türünden değil. Karşılaştırma kategorisine ilişkin olan operatörün ürettiği değer aşağıdaki türlerden birinden olmak zorunda:
++ strong ordering
++ weak ordering
++ partial ordering
 
 Bu türler _0_ sabiti ile ile karşılaştırılabiliyorlar.
