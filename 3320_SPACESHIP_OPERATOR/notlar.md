@@ -23,9 +23,9 @@ Fonksiyonların default edilmesi durumunda;
 
 * sınıfın elemanlarının karşılaştırıması exception throw etmiyorsa oluşturulan fonksiyon _noexcept_ belirleyicisine sahip.
 * Karşılaştırma işlemleri derleme zamanında yapılabiliyor ise fonksiyonlar _constexpr_
-* rewriting söz konusu olduğundan birinci operand_ (sol operand)_ için de örtülü dönüşüm yapılabiliyor.
+* _rewriting_ söz konusu olduğundan birinci operand _(sol operand)_ için de örtülü dönüşüm yapılabiliyor.
 * Fonksiyonun geri dönüş değerinin kullanılmaması durumunda derleyici uyarı mesajı evrecek.
-* Yani fonksiyon [[nodiscard]] attribute ile bildirilmiş kabul ediliyor.
+* Yani fonksiyon _[[nodiscard]] attribute_ ile bildirilmiş kabul ediliyor.
 
 * <=> C++20 standartları ile dile eklenen yeni bir _binary_ operatör.
 * <=> operatörünün önceliği diğer karşılaştırma operatörlerinden daha yüksek.
