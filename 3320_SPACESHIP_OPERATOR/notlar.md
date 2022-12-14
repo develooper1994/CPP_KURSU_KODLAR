@@ -35,3 +35,7 @@ Fonksiyonların default edilmesi durumunda;
 + partial ordering
 
 Bu türler _0_ sabiti ile ile karşılaştırılabiliyorlar.
+
+default edilen <=> operatörü
++ Derleyici fonksiyonun geri dönüş değerinin türünü çıkarım yoluyla belirliyor. _(strong ordering, weak ordering, partial ordering)_
++ Geri dönüş değeri türü auto yapılıyor.
