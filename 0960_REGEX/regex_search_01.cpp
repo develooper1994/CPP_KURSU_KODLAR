@@ -9,7 +9,7 @@ int main()
 		R"((\d{4})\.([a-f]{4})\.(\d{4}))"
 	};
 
-	cout << "regex ifadesi: " << sreg << "\n\n";
+	cout << "regex expression: " << sreg << "\n\n";
 	regex rgx{ sreg };
 
 	string str{ "alican7642.fdce.9245enes" };
