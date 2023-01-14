@@ -2,6 +2,6 @@
 
 #include <functional>
 
-class A {};
+class A;
 
 void foo(std::reference_wrapper<A> x);
