@@ -17,6 +17,6 @@ int main()
 
 	cout << count_if(ivec.begin(), ivec.end(), [ival](int x) {return x > ival; }) << "\n";
 	cout << count_if(ivec.begin(), ivec.end(), bind(greater<int>{}, _1, ival)) << "\n";
-	cout << count_if(ivec.begin(), ivec.end(), bind(greater<>{}, _1, ival)); //transparent
+	cout << count_if(ivec.begin(), ivec.end(), bind(greater{}, _1, ival)); //transparent
 }
 
