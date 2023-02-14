@@ -7,9 +7,10 @@ public:
 
 class Nec_ {
 public:
-	~Nec() = default;
-	Nec(const Nec&); //user declared
-	Nec& operator=(const Nec&) = default; //!!
+	//default constructor is not declared
+	~Nec_() = default;
+	Nec_(const Nec_&); //user declared
+	Nec_& operator=(const Nec_&) = default; //!!
 
 	//move members are not declared
 };
