@@ -10,6 +10,7 @@ public:
 	Nec() = default;
 	~Nec() = default;
 	Nec(const Nec&) = default; //!!
+	Nec& operator=(const Nec&); //user declared
 
 	//move members are not declared
 };
