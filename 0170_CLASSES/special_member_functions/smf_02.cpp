@@ -5,15 +5,16 @@ public:
 	Nec() = default;   
 };
 
+//all other special member functions are implicitly declared
 class Nec_ {
 public:
 
-	Nec();  //user declared
-	~Nec() = default;  
+	Nec_();  //user declared
+	~Nec_() = default;  
 
-	Nec(const Nec&) = default;
-	Nec& operator=(const Nec&) = default;
+	Nec_(const Nec_&) = default;
+	Nec_& operator=(const Nec_&) = default;
 
-	Nec(Nec&&) = default;
-	Nec& operator=(Nec&&) = default;
+	Nec_(Nec_&&) = default;
+	Nec_& operator=(Nec_&&) = default;
 };
