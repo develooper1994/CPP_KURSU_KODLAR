@@ -3,19 +3,15 @@
 #include <iostream>
 #include <algorithm>
 
-
 int main()
 {
-	using namespace std;
+	std::string s{ "ABCDEFGHIJKLMNOPQRSTUVWXYZ" };
 
-	string s{ "ABCDEFGHIJKLMNOPQRSTUVWXYZ" };
-
-	mt19937 eng{ random_device{}() };
+	std::mt19937 eng{ std::random_device{}() };
 
 	while (true) {
-		cout << s << "\n";
+		std::cout << s << '\n';
 		shuffle(begin(s), end(s), eng);
 		(void)getchar();
-		std::system("cls");
 	}
 }
