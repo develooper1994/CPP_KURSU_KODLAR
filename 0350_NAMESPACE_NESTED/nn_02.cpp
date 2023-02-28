@@ -16,7 +16,8 @@ namespace Enc {
 		void func()
 		{
 			//foo(10); //invalid
-			Enc::foo(10); 
+			foo();
+			Enc::foo(10);
 		}
 
 	}
