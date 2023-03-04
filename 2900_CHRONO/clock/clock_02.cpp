@@ -1,3 +1,13 @@
+/*
+	clock::now
+	clock::to_time_t(time_point)
+	std::ctime
+	time_point + duration
+*/
+
+#define _CRT_SECURE_NO_WARNINGS
+
+
 #include <iostream>
 #include <chrono>
 
@@ -5,7 +15,7 @@ int main()
 {
 	using namespace std::chrono;
 	using Day = duration<int, std::ratio<60 * 60 * 24>>;
-	Day one_day{1};
+	Day one_day{ 1 };
 
 	//system_clock::time_point tp_today = system_clock::now();
 	auto tp_today = system_clock::now();
