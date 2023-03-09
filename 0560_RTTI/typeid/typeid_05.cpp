@@ -7,5 +7,6 @@ int main()
 {
 	int x = 10;
 	auto p = typeid(x++).name();
-	std::cout << "x = " << x << "\n"; //10
+	std::cout << "x = " << x << '\n'; //10
+        //...
 }
