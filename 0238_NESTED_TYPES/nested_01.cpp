@@ -13,7 +13,7 @@ class Encloser {
 		int get_x(Encloser &enc)
 		{
 			//...
-			return enc.mx; // Eksiden gecersizdi C++11 ile gecerli hale geldi
+			return enc.mx; // Eskiden gecersizdi C++11 ile gecerli hale geldi
 		}
 	};
 	int mx;
