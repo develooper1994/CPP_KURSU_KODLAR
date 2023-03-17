@@ -8,6 +8,7 @@ namespace Nec {
    using namespace Nested;
    void func(Nested::C);
 }
+
 int main()
 {
     Nec::Nested::C x;
