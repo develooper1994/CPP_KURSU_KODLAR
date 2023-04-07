@@ -1,16 +1,18 @@
 #include <iostream>
 
-void f1()
+void foo()
 {
 	throw 5;
 }
 
-void f2()
+void bar()
 {
 	try {
-		f1();
+		foo();
 	}
-	catch (int &x) {
+	catch (int& x) {
+		std::cout << "exception caught in function foo\n";
+		std::cout << "the address of the exception object is: " << &x << '\n';
 		x++;
 		throw;
 	}
@@ -19,10 +21,11 @@ void f2()
 int main()
 {
 	try {
-		f2();
+		bar();
 	}
-	catch (const int &a) {
-		std::cout << "hata main islevinde yakalandi" << '\n';
+	catch (const int& a) {
+		std::cout << "exception caught in function main\n";
+		std::cout << "the address of the exception object is: " << &a << '\n';
 		std::cout << "a = " << a << '\n';
 	}
 }
