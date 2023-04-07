@@ -9,7 +9,6 @@ struct Member {
 	}
 };
 
-
 class Owner {
 public:
 	Owner() try : mx{ 0 }
@@ -19,6 +18,8 @@ public:
 	catch (const std::exception& ex)
 	{
 		std::cout << "hata yakalandi: " << ex.what() << '\n';
+		// function try bloğunu izleyen catch bloğu içinde eğer exception
+		// gonderilmez ise derleyici bloğun sonuna rethrow statement ekliyor
 		//yorum satirindan cikartip tekrar derleyin
 		//throw std::runtime_error{ "error from owner ctor" };
 	}
