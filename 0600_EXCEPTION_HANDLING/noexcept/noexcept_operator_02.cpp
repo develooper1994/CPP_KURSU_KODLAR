@@ -11,6 +11,7 @@ auto fy = []()noexcept {};
 
 class Nec {
 public:
+	Nec() {};
 	~Nec() {};
 };
 int main()
@@ -20,6 +21,7 @@ int main()
 	std::cout << noexcept(f2()) << "\n";
 	std::cout << noexcept(fx()) << "\n";
 	std::cout << noexcept(fy()) << "\n";
+	std::cout << noexcept(Nec{}) << "\n";
 	std::cout << noexcept(std::declval<Nec>().~Nec()) << "\n";
 	constexpr auto flag = noexcept(fx()); //gecerli
 }
