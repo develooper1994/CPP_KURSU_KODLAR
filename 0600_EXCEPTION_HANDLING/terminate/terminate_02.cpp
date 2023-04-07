@@ -30,7 +30,7 @@ int main()
 	try {
 		foo();
 	}
-	catch (NecEx) {
-		
+	catch (NecEx) { //catch param. is not a reference (copy ctor. called)
+
 	}
 }
