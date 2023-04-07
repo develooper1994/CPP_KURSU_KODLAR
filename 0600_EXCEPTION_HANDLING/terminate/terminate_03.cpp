@@ -1,7 +1,6 @@
 #include <iostream>
 #include <exception>
 
-
 class Nec {
 public:
 	Nec(int x)
@@ -15,7 +14,7 @@ public:
 
 void myterminate()
 {
-	std::cout << "myterminate\n";
+	std::cout << "function myterminate called!\n";
 	std::exit(EXIT_FAILURE);
 }
 
