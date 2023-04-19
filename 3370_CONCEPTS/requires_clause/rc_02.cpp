@@ -1,4 +1,6 @@
-template<typename T>
+#include <concepts>
+
+template<std::integral T>
 class Tclass {
 };
 
@@ -13,5 +15,5 @@ concept nec = requires {
 int main()
 {
     static_assert(nec<int>); // valid
-    static_assert(nec<A>); // valid
+    static_assert(nec<A>); // error
 }
