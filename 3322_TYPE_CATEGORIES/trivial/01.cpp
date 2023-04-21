@@ -41,5 +41,25 @@ struct T5 {
     T4 t4;
 };
 
-//trivial sınıfların non-static veri elemanları trivial türlerden olabilir
+//trivial sınıfların non-static veri elemanları trivial türlerden olabilir.
 static_assert(std::is_trivial_v<T5>); //Ok
+
+
+
+struct T6 {
+    T1 ar_t1[10];
+    T2 ar_t2[20];
+};
+
+// trivial sınıfların non - static veri elemanları trivial türlerden diziler olabilir.
+static_assert(std::is_trivial_v<T6>); //Ok
+
+
+
+struct T7 {
+    T6 mt;
+    void foo(); 
+};
+
+// trivial sınıfların sanal olmayan (non-virtual) üye fonksiyonları olabilir:
+static_assert(std::is_trivial_v<T7>); //Ok
