@@ -31,10 +31,17 @@ Nt4::Nt4() = default;
 //static_assert(std::is_trivial_v<Nt4>);
 
 struct Nt4 {
-public:
 	Nt4();
 };
 
 Nt4::Nt4() = default;
 // default ctor daha sonra default edilirse trivial sınıf olmuyor
 //static_assert(std::is_trivial_v<Nt4>);
+
+struct Nt5 {
+	virtual void foo();
+};
+
+// trivial sınıfların sanal üye fonksiyonları olamaz
+//static_assert(std::is_trivial_v<Nt5>);
+
