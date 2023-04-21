@@ -1,4 +1,5 @@
 #include <type_traits>
+#include <string>
 
 struct T1 {};
 static_assert(std::is_trivial_v<T1>); //Ok
@@ -63,3 +64,23 @@ struct T7 {
 
 // trivial sınıfların sanal olmayan (non-virtual) üye fonksiyonları olabilir:
 static_assert(std::is_trivial_v<T7>); //Ok
+
+struct T8 {
+    T8() = default; //user declared but not user-provided
+    T8(int x) : x(x) {};
+    int x;
+};
+
+// trivial sınıfların özel üye fonksiyon olmayan ctor'ları olabilir.
+// Ancak trivial olması için default ctor.'a sahip olması gerekir
+
+static_assert(std::is_trivial_v<T8>); //Ok
+
+
+struct T9 {
+    static std::string ms;
+};
+
+
+// trivial sınıfların trivial olmayan sınıflar türünden static veri elemanları olabilir.
+static_assert(std::is_trivial_v<T9>); //Ok
