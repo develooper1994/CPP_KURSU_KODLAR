@@ -1,15 +1,18 @@
-template<typename... Types, int... N> 
-void func(Types(&...args)[N]) 
+#include <iostream>
+
+template<typename... Types, int... N>
+void func(Types(&...args)[N])
 {
-    //...
+    //MSVS
+    std::cout << __FUNCSIG__ << '\n';
 }
 
 int main()
 {
-    int a[5]{};
-    int b[10]{};
-    int c[20]{};
-    double d[30]{};
+    int a[2]{};
+    int b[3]{};
+    int c[5]{};
+    double d[7]{};
 
     func(a, b, c, d);
 }
