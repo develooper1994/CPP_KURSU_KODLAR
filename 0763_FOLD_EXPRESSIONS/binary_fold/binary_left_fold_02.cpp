@@ -1,6 +1,6 @@
 // fold expressions
 // binary left fold
-// ellipsis paketin solunda binary lefy dold
+// ellipsis paketin solunda binary lefy fold
 
 #include <iostream>
 
