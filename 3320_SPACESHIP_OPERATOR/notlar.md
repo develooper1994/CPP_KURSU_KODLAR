@@ -21,7 +21,7 @@ hem operator== hem de operator != default edilebiliyor.
 
 Fonksiyonların default edilmesi durumunda;
 
-* sınıfın elemanlarının karşılaştırıması exception throw etmiyorsa oluşturulan fonksiyon _noexcept_ belirleyicisine sahip.
+* sınıfın elemanlarının karşılaştırılması _exception throw_ etmiyorsa oluşturulan fonksiyon _noexcept_ belirleyicisine sahip.
 * Karşılaştırma işlemleri derleme zamanında yapılabiliyor ise fonksiyonlar _constexpr_
 * _rewriting_ söz konusu olduğundan birinci operand _(sol operand)_ için de örtülü dönüşüm yapılabiliyor.
 * Fonksiyonun geri dönüş değerinin kullanılmaması durumunda derleyici uyarı mesajı evrecek.
