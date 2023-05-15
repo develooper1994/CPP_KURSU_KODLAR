@@ -10,13 +10,11 @@ using namespace std;
 
 int main()
 {
-	vector<int> ivec(20);
-	vector<int> dvec(20);
+	vector<int> vec(20);
+
 	//...
-	//for_each(begin(ivec), end(ivec), func); //gecersiz
-	for_each(begin(ivec), end(ivec), (void (*)(int))func);
+	//for_each(begin(vec), end(vec), func); //gecersiz
+	for_each(begin(vec), end(vec), (void (*)(int))func);
 	putchar('\n');
-	for_each(begin(ivec), end(ivec), [](auto x) {return func(x); });
-	putchar('\n');
-	for_each(begin(dvec), end(dvec), [](auto x) {return func(x); });
+	for_each(begin(vec), end(vec), [](auto x) {return func(x); });
 }
