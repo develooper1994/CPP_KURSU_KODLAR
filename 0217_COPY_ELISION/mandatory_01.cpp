@@ -7,7 +7,7 @@ struct A {
 	}
 
 	A(const A&) = delete;
-	A(A &&) = delete;
+	A(A&&) = delete;
 };
 
 void func(A)
@@ -22,7 +22,7 @@ A foo()
 
 int main()
 {
-	A ax = A{};
-	func(A{});
-	A ay = foo();
+	A ax = A{};  //mandatory copy elision
+	func(A{});   //mandatory copy elision
+	A ay = foo();  //mandatory copy elision
 }
