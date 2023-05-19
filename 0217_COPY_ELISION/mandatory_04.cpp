@@ -33,5 +33,5 @@ Nec bar()
 
 int main()
 {
-	auto x = bar();
+	auto x = bar();  //Nec(const char *)
 }
