@@ -1,15 +1,17 @@
 #include <concepts>
 
+//std:integral is a standard concept
+
 template<std::integral T>
 class Tclass {
 };
 
-struct A {
-};
+struct A {};
 
-template<typename T>
-concept nec = requires {
-    typename Tclass<T>;
+template <typename T>
+concept nec = requires {  //requires expression
+    //typename Tclass<T>;
+    Tclass<T> {};
 };
 
 int main()
