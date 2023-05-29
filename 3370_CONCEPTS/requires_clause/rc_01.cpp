@@ -1,6 +1,5 @@
-
 template<typename C>
-concept nec = requires {
+concept necval = requires {
     typename C::value_type;
 };
 
@@ -9,21 +8,21 @@ struct A
     using value_type = int;
 };
 
-struct B{};
+struct B {};
 
 template <typename T>
-requires nec<T>
+requires necval<T>
 class Myclass {
 
 };
 
-void func(nec auto);
+void func(necval auto);
 
 int main()
 {
-    //Myclass<int> x; // Syntax Error
+    //Myclass<int> x; // error
 
-    Myclass<A> x; // ok
+    Myclass<A> y; // ok
     func(A{}); //ok
     //func(B{}); // error
 }
