@@ -12,7 +12,7 @@ int main()
 
 	array<int, 3> a1 = foo();
 	auto a2 = foo();
-	auto [a, b, c] = foo();  //structural binding
+	auto [a, b, c] = foo();  //structured binding
 
 	cout << a << " " << b << " " << c << "\n";
 }
