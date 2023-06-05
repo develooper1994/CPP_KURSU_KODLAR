@@ -1,5 +1,7 @@
 #include <string>
 #include <tuple>
+#include <iostream>
+
 #include "date.h"
 
 std::tuple<int, double, std::string, Date>
@@ -13,7 +15,6 @@ func()
 int main()
 {
 	if (auto [ival, dval, name, bdate] = func(); name == "helin") {
-		std::cout << ival << " " << dval << " " << bdate << "\n";
+		std::cout << ival << " " << dval << " " << bdate << '\n';
 	}
-
 }
