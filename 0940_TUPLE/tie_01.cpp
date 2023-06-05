@@ -16,7 +16,7 @@ int main()
 	get<1>(t) *= 2.5;
 	get<2>(t) += "can";
 
-	cout << "x = " << x << "\n";
-	cout << "dval = " << dval << "\n";
-	cout << "str = " << str << "\n";
+	cout << "x = " << x << '\n';
+	cout << "dval = " << dval << '\n';
+	cout << "str = " << str << '\n';
 }
