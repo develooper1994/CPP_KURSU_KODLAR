@@ -33,7 +33,6 @@ struct comparison {
 };
 
 
-
 class Nec : public comparison<Nec> {
 public:
 	Nec(int x) : x_{ x } {}
@@ -68,20 +67,20 @@ int main()
 	Nec x{ 132 }, y{ 43 };
 	cout << boolalpha;
 
-	cout << "x < y  : " << (x < y) << "\n";
-	cout << "x <= y : " << (x <= y) << "\n";
-	cout << "x > y  : " << (x > y) << "\n";
-	cout << "x >= y : " << (x >= y) << "\n";
-	cout << "x == y : " << (x == y) << "\n";
-	cout << "x != y : " << (x != y) << "\n";
+	cout << "x < y  : " << (x < y) << '\n';
+	cout << "x <= y : " << (x <= y) << '\n';
+	cout << "x > y  : " << (x > y) << '\n';
+	cout << "x >= y : " << (x >= y) << '\n';
+	cout << "x == y : " << (x == y) << '\n';
+	cout << "x != y : " << (x != y) << '\n';
 
 	Person p1{ "necati" };
 	Person p2{ "necati" };
 
-	cout << "p1 < p2  : " << (p1 < p2) << "\n";
-	cout << "p1 <= p2 : " << (p1 <= p2) << "\n";
-	cout << "p1 > p2  : " << (p1 > p2) << "\n";
-	cout << "p1 >= p2 : " << (p1 >= p2) << "\n";
-	cout << "p1 == p2 : " << (p1 == p2) << "\n";
-	cout << "p1 != p2 : " << (p1 != p2) << "\n";
+	cout << "p1 < p2  : " << (p1 < p2) << '\n';
+	cout << "p1 <= p2 : " << (p1 <= p2) << '\n';
+	cout << "p1 > p2  : " << (p1 > p2) << '\n';
+	cout << "p1 >= p2 : " << (p1 >= p2) << '\n';
+	cout << "p1 == p2 : " << (p1 == p2) << '\n';
+	cout << "p1 != p2 : " << (p1 != p2) << '\n';
 }
