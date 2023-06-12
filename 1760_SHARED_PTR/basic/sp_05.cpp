@@ -6,7 +6,9 @@ int main()
 {
 	using namespace std;
 
-	shared_ptr<string> spx{ new string{"necati ergin"} };
+	auto p = new string{ "necati ergin" };
+	cout << "p          = " << p << '\n';
+	shared_ptr<string> spx{p};
 	shared_ptr<string> spy;
 
 	cout << "*spx       = " << *spx << '\n';
