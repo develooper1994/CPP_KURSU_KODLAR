@@ -21,12 +21,12 @@ int main()
 			////
 			sort(myvec.begin(), myvec.end(), [](const auto& p1, const auto& p2) {return *p1 < *p2; });
 			for (auto& s : myvec)
-				std::cout << *s << "\n";
+				std::cout << *s << '\n';
 			std::cout << "bir tusa basin "; (void)getchar();
 		}
 
 		for (auto& s : mylist)
-			std::cout << *s << "\n";
+			std::cout << *s << '\n';
 	}
 
 	std::cout << "main devam ediyor\n";
