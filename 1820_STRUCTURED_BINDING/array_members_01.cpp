@@ -25,14 +25,15 @@ int main()
 	std::cout << "sizeof(ar1) = " << sizeof(ar1) << '\n';
 	std::cout << "sizeof(ar2) = " << sizeof(ar2) << '\n';
 
-	for (auto val : ar1)
+	for (auto val : ar1)  //ar1 pointer olsaydi bu kod gecersiz olurdu
 		std::cout << val << " ";
 
 	std::cout << '\n';
 
-	for (auto val : ar2)
+	for (auto val : ar2)   //ar2 pointer olsaydi bu kod gecersiz olurdu
 		std::cout << val << " ";
 
 	std::cout << '\n';
 
+	constexpr auto b = std::is_same_v<char[10], decltype(str1)>; //true
 }
