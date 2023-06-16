@@ -9,5 +9,5 @@ int main()
 	++x, ++y, ++z, ++t;
 
 	for (auto i : ar)
-		std::cout << i << " ";
+		std::cout << i << ' ';
 }
