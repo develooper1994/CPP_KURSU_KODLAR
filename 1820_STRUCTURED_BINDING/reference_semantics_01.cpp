@@ -1,4 +1,4 @@
-//yapisal baglama ve referans semantigi
+//structured binding ve referans semantigi
 
 int a[] = { 1, 2, 3 };
 
@@ -16,6 +16,10 @@ int main()
 	++y;
 	++z;
 
-	for (auto i : a)
-		std::cout << i << " ";
+	for (auto i : a) 
+		std::cout << i << '\n';
+
+	a[0] = a[1] = a[2] = 0;
+
+	std::cout << x << y << z << '\n';
 }
