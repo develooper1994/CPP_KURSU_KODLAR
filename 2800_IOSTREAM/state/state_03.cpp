@@ -1,6 +1,5 @@
 #include <iostream>
 #include <iomanip>
-#include <bitset>
 
 void display_state(const std::ios& s)
 {
