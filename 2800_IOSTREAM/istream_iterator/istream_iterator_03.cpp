@@ -7,5 +7,5 @@ using namespace std;
 int main()
 {
 	cout << "sayilari giriniz: " << 
-	accumulate(istream_iterator<int>{cin}, {}, 0) << "\n";
+	accumulate(istream_iterator<int>{cin}, {}, 0) << '\n';
 }
