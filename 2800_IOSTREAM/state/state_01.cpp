@@ -10,6 +10,7 @@ int main()
 	cout << boolalpha;
 	cin >> x;
 
+	cout << "good : " << cin.good() << '\n';
 	cout << "eof  : " << cin.eof() << '\n';
 	cout << "fail : " << cin.fail() << '\n';
 	cout << "bad  : " << cin.bad() << '\n';
