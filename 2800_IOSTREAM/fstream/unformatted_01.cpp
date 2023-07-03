@@ -14,7 +14,7 @@ int main()
 	}
 
 	int prime_count{};
-	int ival = 2;
+	int ival{ 2 };
 
 	while (prime_count < 10'000) {
 		if (isprime(ival)) {
@@ -23,5 +23,4 @@ int main()
 		}
 		++ival;
 	}
-
 }
