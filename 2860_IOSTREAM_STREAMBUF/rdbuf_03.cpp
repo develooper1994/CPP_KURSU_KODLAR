@@ -7,11 +7,11 @@ int main()
 
     ostringstream oss;
 
-    auto cout_buff = cout.rdbuf(); 
-    cout.rdbuf(oss.rdbuf()); 
+    auto cout_buff = cout.rdbuf();
+    cout.rdbuf(oss.rdbuf());
     cout << "necati ergin";
 
     cout.rdbuf(cout_buff);
     cout << "ahmet ibrahim aksoy\n";
-    cout << "local content: " << oss.str() << "\n";
+    cout << "local content: " << oss.str() << '\n';
 }
