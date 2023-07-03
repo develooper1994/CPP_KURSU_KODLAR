@@ -1,4 +1,3 @@
-#include <string>
 #include <vector>
 
 class Person {
@@ -6,7 +5,7 @@ public:
 	//...
 	std::string get_name()const
 	{
-		return m_name;
+		return m_name; //her çağrıda kopyalamaya neden olacak.#include <string>
 	}
 private:
 	std::string m_name;
