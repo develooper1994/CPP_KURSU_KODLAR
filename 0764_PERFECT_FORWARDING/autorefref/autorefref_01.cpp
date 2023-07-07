@@ -23,5 +23,5 @@ int main()
 	Fill(bvec, true);
 }
 
-lambdadan forward etmek
+
 
