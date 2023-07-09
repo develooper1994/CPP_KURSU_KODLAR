@@ -5,7 +5,7 @@
 
 int main()
 {
-	std::cout << "sizeof (string) = " << sizeof(string) << '\n';
+	std::cout << "sizeof (string) = " << sizeof(std::string) << '\n';
 	std::cout << "sizeof (char *) = " << sizeof(char*) << '\n';
 	std::cout << "sizeof (size_t) = " << sizeof(std::size_t) << '\n';
 	std::cout << "sizeof (string_view) = " << sizeof(std::string_view) << '\n';
