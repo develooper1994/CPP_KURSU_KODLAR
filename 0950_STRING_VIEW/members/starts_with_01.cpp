@@ -1,14 +1,15 @@
 #include <iostream>
 #include <string_view>
 
-using namespace std;
 
 int main()
 {
+	using namespace std;
+
 	string_view str{ "life is very short" };
 
-	std::cout << boolalpha << str.starts_with("life") << "\n";
-	std::cout << boolalpha << str.starts_with("time") << "\n";
-	std::cout << boolalpha << str.ends_with("short") << "\n";
-	std::cout << boolalpha << str.ends_with("long") << "\n";
+	cout << str.starts_with("life") << '\n';
+	cout << str.starts_with("time") << '\n';
+	cout << str.ends_with("short") << '\n';
+	cout << str.ends_with("long") << '\n';
 }
