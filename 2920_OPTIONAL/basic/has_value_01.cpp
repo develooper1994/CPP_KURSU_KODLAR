@@ -2,14 +2,14 @@
 #include <optional>
 #include <iostream>
 
-std::optional<std::string> getMiddleName(const std::string& rname);
+std::optional<std::string> get_middle_name(const std::string& rname);
 
 int main()
 {
 	std::string name;
 	//...
 
-	if (auto op = getMiddleName(name); op.has_value()) {
+	if (auto op = get_middle_name(name); op.has_value()) {
 		std::cout << "ikinci isim: " << *op << '\n';
 		//
 	}
