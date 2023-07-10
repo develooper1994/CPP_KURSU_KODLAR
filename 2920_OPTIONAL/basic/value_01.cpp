@@ -7,7 +7,7 @@ int main()
 
 	try {
 		int ival = opt.value();
-		std::cout << "ival = " << ival << "\n";
+		std::cout << "ival = " << ival << '\n';
 	}
 	catch (const std::bad_optional_access& e)
 	{
