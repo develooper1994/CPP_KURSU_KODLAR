@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 
-std::optional<std::string> getMiddleName(const std::string& rname)
+std::optional<std::string> get_middle_name(const std::string& rname)
 {
 	//return {};
 	return "alican";
@@ -11,10 +11,12 @@ std::optional<std::string> getMiddleName(const std::string& rname)
 
 int main()
 {
+	using namespace std;
+
 	std::string str;
 	///code
 
-	if (auto ostr = getMiddleName(str); ostr)
+	if (auto ostr = get_middle_name(str); ostr)
 		std::cout << *ostr << '\n';
 	else
 		std::cout << "ostr bos durumda\n";
