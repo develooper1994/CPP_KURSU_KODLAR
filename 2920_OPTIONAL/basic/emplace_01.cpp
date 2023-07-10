@@ -14,10 +14,10 @@ public:
 int main()
 {
 	std::optional<A> os;
-	std::cout << "&os = " << &os << "\n";
+	std::cout << "&os = " << &os << '\n';
 	os.emplace();
-	//os.emplace(10);
-	//os.emplace(10, 20);
-	//os.emplace(4.5);
-	//os.emplace("necati");
+	os.emplace(10);
+	os.emplace(10, 20);
+	os.emplace(4.5);
+	os.emplace("necati");
 }
