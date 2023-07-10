@@ -1,7 +1,6 @@
 #include <optional>
 #include <iostream>
 
-
 int main()
 {
 	std::optional<double> d1{ 2.56 };
