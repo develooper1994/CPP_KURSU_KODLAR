@@ -7,12 +7,12 @@ class UserName
 public:
 	explicit UserName(const std::string& str) : m_name(str)
 	{
-		std::cout << "constructor : " << m_name << "\n";
+		std::cout << "constructor : " << m_name << '\n';
 	}
 
 	~UserName()
 	{
-		std::cout << "destructor : " << m_name << "\n";
+		std::cout << "destructor : " << m_name << '\n';
 	}
 
 private:
