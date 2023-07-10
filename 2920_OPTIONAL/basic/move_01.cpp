@@ -2,7 +2,7 @@
 #include <iostream>
 
 struct A {
-	A() { std::cout << "default ctor.()\n"; }
+	A() { std::cout << "default ctor()\n"; }
 	A(const A&) = delete;
 	A& operator=(const A&) = delete;
 	A(A&&) { std::cout << "move ctor()\n"; }
