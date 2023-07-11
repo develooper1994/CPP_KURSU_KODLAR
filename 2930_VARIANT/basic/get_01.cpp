@@ -8,9 +8,9 @@ int main()
 
 	try
 	{
-		using age_t		= int;
-		using weight_t	= double;
-		using name_t	= string;
+		using age_t = int;
+		using weight_t = double;
+		using name_t = string;
 
 		std::variant<age_t, weight_t, name_t> va;
 
@@ -18,15 +18,15 @@ int main()
 
 		va = 19;
 
-		cout << "yas     = " << get<age_t>(va) << '\n';
+		cout << "age     = " << get<age_t>(va) << '\n';
 		cout << "age     = " << get<idx_age>(va) << '\n';
 
-		va = 3.14;
+		va = 83.14;
 
 		cout << "weight  = " << std::get<idx_weight>(va) << '\n';
 		cout << "weight  = " << std::get<weight_t>(va) << '\n';
 
-		va = "Kaan Aslan";
+		va = "Necati Ergin";
 
 		cout << "name    = " << get<idx_name>(va) << '\n';
 		cout << "name    = " << get<name_t>(va) << '\n';
@@ -35,5 +35,4 @@ int main()
 	{
 		std::cout << "exception caught : " << e.what() << '\n';
 	}
-
 }
