@@ -14,7 +14,7 @@ int main()
 {
 	using namespace std;
 
-	//variant<Data, int, double> v1;  //error: class Data has no default cto
+	//variant<Data, int, double> v1;  //error: class Data has no default ctor.
 	variant<monostate, Data, int, double> v2; //valid
 
 	cout << "index = " << v2.index() << '\n';  // 0
@@ -36,7 +36,7 @@ int main()
 	v2 = 4.5;
 	cout << "index = " << v2.index() << '\n';
 	v2 = std::monostate{};
-	cout << "index = " << v2.index() << "\n";
+	cout << "index = " << v2.index() << '\n';
 	v2 = {};
-	cout << "index = " << v2.index() << "\n";
+	cout << "index = " << v2.index() << '\n';
 }
