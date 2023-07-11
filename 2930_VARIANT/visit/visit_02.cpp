@@ -18,11 +18,11 @@ int main()
 
 	visit(triple{}, vx);
 
-	cout << get<0>(vx) << "\n";
+	cout << get<0>(vx) << '\n';
 	vx = "can";
 	visit(triple{}, vx);
-	cout << get<1>(vx) << "\n";
+	cout << get<1>(vx) << '\n';
 	vx = 4.5;
 	visit(triple{}, vx);
-	cout << get<2>(vx) << "\n";
+	cout << get<2>(vx) << '\n';
 }
