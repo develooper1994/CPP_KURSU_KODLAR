@@ -180,7 +180,7 @@ int main()
 ```
 
 #### std::any_cast\<> işlev şablonu
-_any_ nesnesinin tuttuğu değere erişmenin tek yolu onu global _any_cast/<>_ işleviyle tuttuğu değerin türüne dönüştürmek. _any_cast/<>_ işleviyle, _any_ sınıf nesnesi bir değer türüne bir referans türüne ya da bir adres türüne dönüştürülebilir:
+_any_ nesnesinin tuttuğu değere erişmenin tek yolu onu global _any_cast<>_ işleviyle tuttuğu değerin türüne dönüştürmek. _any_cast<> _işleviyle, _any_ sınıf nesnesi bir değer türüne bir referans türüne ya da bir adres türüne dönüştürülebilir:
 
 ```
 #include <any>
@@ -238,7 +238,7 @@ std::bad_cast
 std::bad_any_cast
 ```
 
-any_cast/<> dönüştürme işlevini kullanarak _any_ tarafından tutulan nesneye gösterici (pointer) semantiği ile de erişilebilir. Ancak bu durumda şablon argümanı olarak kullanılan tür tutulan nesnenin türü değil ise bir hata nesnesi gönderilmez _(exception throw edilmez)_, _nullptr_ değeri elde edilir:
+any_cast/<> dönüştürme işlevini kullanarak _any_ tarafından tutulan nesneye gösterici _(pointer)_ semantiği ile de erişilebilir. Ancak bu durumda şablon argümanı olarak kullanılan tür tutulan nesnenin türü değil ise bir hata nesnesi gönderilmez _(exception throw edilmez)_, _nullptr_ değeri elde edilir:
 
 ```
 #include <any>
