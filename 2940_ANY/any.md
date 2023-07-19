@@ -79,7 +79,7 @@ int main()
 ```
 
 #### any nesneleri için bellek ihtiyacı
-Bir _any_ sınıf nesnesi tarafından tutulacak değerin bellek gereksinimi _(storage)_ 1 byte da olabilir 5000 byte da. _any_ nesnesi sahip olacağı değeri tutmak için _heap_ alanında bir bellek bloğu edinebilir. Bu konuda derleyiciler istedikleri gibi kod üretebiliyorlar. Derleyiciler tipik olarak doğrudan any nesnesi içinde bir bellek alanını görece olarak küçük nesnelerin tutulması amaçlı kullanıyorlar. (C++17 standartları da böyle bir gerçekleştirimi öneriyor.) Eğer _any_ tarafından saklanacak değer bu bellek alanına sığıyor ise değer bu alanda tutuluyor. Bu tekniğe "küçük tampon optimizasyonu" _(small buffer optimization SBO)_ deniyor. Saklanacak nesne bu bellek alanına sığmıyor ise heap alanından bir bellek bloğu elde ediliyor. Aşağıda programı kendi derleyiciniz ile derleyerek çalıştırın ve _any_ nesneleri için _sizeof_ değerinin ne olduğunu görün:
+Bir _any_ sınıf nesnesi tarafından tutulacak değerin bellek gereksinimi _(storage)_ _1 byte_ da olabilir _5000 byte_ da. _any_ nesnesi sahip olacağı değeri tutmak için _heap_ alanında bir bellek bloğu edinebilir. Bu konuda derleyiciler istedikleri gibi kod üretebiliyorlar. Derleyiciler tipik olarak doğrudan _any_ nesnesi içinde bir bellek alanını görece olarak küçük nesnelerin tutulması amaçlı kullanıyorlar. (C++17 standartları da böyle bir gerçekleştirimi öneriyor.) Eğer _any_ tarafından saklanacak değer bu bellek alanına sığıyor ise değer bu alanda tutuluyor. Bu tekniğe "küçük tampon optimizasyonu" _(small buffer optimization SBO)_ deniyor. Saklanacak nesne bu bellek alanına sığmıyor ise _heap_ alanından bir bellek bloğu elde ediliyor. Aşağıda programı kendi derleyiciniz ile derleyerek çalıştırın ve _any_ nesneleri için _sizeof_ değerinin ne olduğunu görün:
 
 ```
 #include <any>
@@ -101,7 +101,7 @@ MSVC 2017 15.7.0 64-bit        64
 ```
 
 #### any nesnesinin değerini değiştirmek
-Sınıfın atama operatör işlevi ya da _emplace\<>_ işlev şablonu ile bir _any_ nesnesinin değeri değiştirilebilir. Aşağıdaki kodu inceleyin:
+Sınıfın atama operatör işlevi ya da _emplace<>_ işlev şablonu ile bir _any_ nesnesinin değeri değiştirilebilir. Aşağıdaki kodu inceleyin:
 
 ```
 #include <any>
