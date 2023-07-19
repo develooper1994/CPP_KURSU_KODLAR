@@ -264,7 +264,7 @@ Sınıfın _type_ isimli üye işlevi ile _any_ nesnesi tarafından tutulmakta o
 const std::type_info& type() const noexcept;
 ```
 
-İşlevin geri dönüş değeri any nesnesinin tuttuğu değerin tür bilgisini taşıyan _type_info_ nesnesi. Eğer _any_ nesnesi boş ise type işlevinin geri dönüş değeri _typeid(void)_ olur. Bu işlevle erişilen _type_info_ nesnesi type_info sınıfının _operator==_ işleviyle bir karşılaştırma işlemine sokulabilir. Aşağıdaki kodu inceleyelim:
+İşlevin geri dönüş değeri any nesnesinin tuttuğu değerin tür bilgisini taşıyan _type_info_ nesnesi. Eğer _any_ nesnesi boş ise type işlevinin geri dönüş değeri _typeid(void)_ olur. Bu işlevle erişilen _type_info_ nesnesi _type_info_ sınıfının _operator==_ işleviyle bir karşılaştırma işlemine sokulabilir. Aşağıdaki kodu inceleyelim:
 
 ```
 #include <any>
@@ -307,15 +307,14 @@ int main()
 ```
 
 #### any sınıfının kullanıldığı yerler
-C++17 standartları öncesinde C++ dilinde yazılan kodlarda daha önce _void*_ türünün kullanıldığı birçok yerde _any_ sınıfı kullanılabilir. _void *_ türünden bir gösterici (pointer) değişken, herhangi türünden bir nesnenin adresini tutabilir. Ancak _void*_ türünden bir değişken adresini tuttuğu nesnenin türünü bilmez ve onun hayatını kontrol edemez. Ayrıca _void *_ türü bir gösterici türü olduğu için "deger türü" _(value type)_ semantiğine sahip değildir. _any_ istenilen herhangi türden bir değeri saklayabilir. Tutulan nesnenin değeri ve türü değiştirilebilir. _any_ tuttuğu nesnenin hayatını da kontrol eder ve her zaman tuttuğu nesnenin türünü bilir. Eğer tutulacak değerin hangi türlerden olabileceği biliniyorsa _any_ yerine _std::variant_ türünün kullanılması çok daha uygun olacaktır. Aşağıdaki kullanım örneği resmi öneri metninden alındı:
+C++17 standartları öncesinde C++ dilinde yazılan kodlarda daha önce _void*_ türünün kullanıldığı birçok yerde _any_ sınıfı kullanılabilir. _void *_ türünden bir gösterici _(pointer)_ değişken, herhangi türünden bir nesnenin adresini tutabilir. Ancak _void*_ türünden bir değişken adresini tuttuğu nesnenin türünü bilmez ve onun hayatını kontrol edemez. Ayrıca _void *_ türü bir gösterici türü olduğu için "deger türü" _(value type)_ semantiğine sahip değildir. _any_ istenilen herhangi türden bir değeri saklayabilir. Tutulan nesnenin değeri ve türü değiştirilebilir. _any_ tuttuğu nesnenin hayatını da kontrol eder ve her zaman tuttuğu nesnenin türünü bilir. Eğer tutulacak değerin hangi türlerden olabileceği kesinlikle biliniyorsa _any_ yerine _std::variant_ türünün kullanılması çok daha uygun olacaktır. Aşağıdaki kullanım örneği resmi öneri metninden alındı:
 
 ```
 #include <string>
 #include <any>
 #include <list>
 
-struct property
-{
+struct property {
     property();
     property(const std::string &, const std::any &);
     std::string name;
@@ -325,6 +324,6 @@ struct property
 typedef std::list<property> properties;
 ```
 	
-Yukarıdaki kodda tanımlanan _property_ türünden bir nesne hem istenilen türden bir değer saklayabilir hem de bu değere ilişkin tanımlayıcı bir yazıyı tutabilir. Böyle bir tür _GUI_ uygulamalarından oyun programlarına kadar birçok yerde kullanılabilir. Bir kütüphanenin ele alacağı türleri bilmeden o türlerden değerleri tutabilmesi ve başka _API_'lere bunları gönderebilmesi gereken durumlarda any sınıfı iyi bir seçenek oluşturabilir. Betik _(script)_ dilleriyle arayüz oluşturma, betik dilleri için yazılan yorumlayıcı programlarda böyle türlere ihtiyaç artabiliyor.
+Yukarıdaki kodda tanımlanan _property_ türünden bir nesne hem istenilen türden bir değer saklayabilir hem de bu değere ilişkin tanımlayıcı bir yazıyı tutabilir. Böyle bir tür _GUI_ uygulamalarından oyun programlarına kadar birçok yerde kullanılabilir. Bir kütüphanenin ele alacağı türleri bilmeden o türlerden değerleri tutabilmesi ve başka _API_'lere bunları gönderebilmesi gereken durumlarda _any_ sınıfı iyi bir seçenek oluşturabilir. Betik _(script)_ dilleriyle arayüz oluşturma, betik dilleri için yazılan yorumlayıcı programlarda böyle türlere ihtiyaç artabiliyor.
 	
-any sınıfının tasarımında büyük ölçüde _Kelvin Henney_ tarafından yazılan ve 2001 yılında _boost_ kütüphanesine eklenen _boost::any_ sınıfı esas alındı. _Kevlin Henney_ ve _Beman Dawes_ 2006 yılında _WG21/N1939=J16/06–0009_ belge numarasıyla _any_ sınıfının standartlara eklenmesi önerisini sundular. Nihayet _Beman Dawes_ ve _Alisdair Meredith_'in önerileriyle diğer kütüphane bileşenleriyle birlikte any sınıfı da _C++17_ standartları ile dile eklendi._ boost::any_ kütüphanesinde olmayan, _emplace_ işlevi, _std::in_place_type_t/<>_ parametreli kurucu işlev, küçük tampon optimizasyonu _(small buffer optimization)_ yapılabilmesi gibi bazı özellikler std::any kütüphanesine yer alıyor.
+_any_ sınıfının tasarımında büyük ölçüde _Kelvin Henney_ tarafından yazılan ve 2001 yılında _boost_ kütüphanesine eklenen _boost::any_ sınıfı esas alındı. _Kevlin Henney_ ve _Beman Dawes_ 2006 yılında _WG21/N1939=J16/06–0009_ belge numarasıyla _any_ sınıfının standartlara eklenmesi önerisini sundular. Nihayet _Beman Dawes_ ve _Alisdair Meredith_'in önerileriyle diğer kütüphane bileşenleriyle birlikte any sınıfı da _C++17_ standardı ile dile eklendi. _boost::any_ kütüphanesinde olmayan, _emplace_ işlevi, _std::in_place_type_t<>_ parametreli kurucu işlev, küçük tampon optimizasyonu _(small buffer optimization)_ yapılabilmesi gibi bazı özellikler _std::any_ kütüphanesine yer alıyor.
