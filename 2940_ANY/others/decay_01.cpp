@@ -9,16 +9,15 @@ int main()
 
 	any a = ar;
 
-	cout << "sizeof(a) = " << sizeof(a) << "\n";
+	cout << "sizeof(a) = " << sizeof(a) << '\n';
 
 
 	if (a.type() == typeid(int[])) {
 		cout << "stores an array\n";
 	}
-	else if (a.type() == typeid(int *)) {
+	else if (a.type() == typeid(int*)) {
 		cout << "stores a pointer\n";
 	}
 
-	cout << a.type().name() << "\n";
+	cout << a.type().name() << '\n';
 }
-
