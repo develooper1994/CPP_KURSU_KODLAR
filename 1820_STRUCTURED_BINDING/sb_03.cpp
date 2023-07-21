@@ -19,6 +19,7 @@ void f2()
 {
 	A ax;
 
-	auto [x, y, z] = ax; 
-	//it is invalid in C++17 but valid in C++20
+	auto [x, y, z] = ax; //valid
+	//...
+	
 }
