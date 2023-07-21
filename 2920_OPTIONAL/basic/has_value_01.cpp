@@ -9,11 +9,27 @@ int main()
 	std::string name;
 	//...
 
-	if (auto op = get_middle_name(name); op.has_value()) {
-		std::cout << "ikinci isim: " << *op << '\n';
+	if (auto op = get_middle_name(name)) {
+		std::cout << "second name is: " << *op << '\n';
 		//
 	}
 	else {
-		std::cout << "ikinci isim yok..." << '\n';
+		std::cout << "no second name" << '\n';
+	}
+
+	if (auto op = get_middle_name(name); op) {
+		std::cout << "second name is: " << *op << '\n';
+		//
+	}
+	else {
+		std::cout << "no second name" << '\n';
+	}
+
+	if (auto op = get_middle_name(name); op.has_value()) {
+		std::cout << "second name is: " << *op << '\n';
+		//
+	}
+	else {
+		std::cout << "no second name" << '\n';
 	}
 }
