@@ -12,11 +12,11 @@ struct Erg
 	bool mx_flag;
 	bool my_flag;
 	double mx;
-	double mmy;
+	double my;
 };
 
 int main()
 {
-	std::cout << "sizeof(Nec) = " << sizeof(Nec) << "\n";
-	std::cout << "sizeof(Erg) = " << sizeof(Erg) << "\n";
+	std::cout << "sizeof(Nec) = " << sizeof(Nec) << '\n';
+	std::cout << "sizeof(Erg) = " << sizeof(Erg) << '\n';
 }
