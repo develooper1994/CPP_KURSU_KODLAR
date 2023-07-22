@@ -1,12 +1,7 @@
-#include <iterator>
-#include <algorithm>
 #include <optional>
-#include <vector>
-#include <iostream>
-
 
 template<typename Con, typename Pred>
-auto find_if(Con&& c, Pred&& pred) 
+auto find_if(Con&& c, Pred&& pred)
 {
     using std::begin, std::end;
     auto beg_iter = begin(c), end_iter = end(c);
@@ -20,8 +15,8 @@ auto find_if(Con&& c, Pred&& pred)
 }
 
 template<typename Con, typename T>
-auto find(Con&& c, const T & tval) 
+auto find(Con&& c, const T& tval)
 {
-    return find_if(std::forward<Con>(c), 
+    return find_if(std::forward<Con>(c),
         [&tval](auto&& x) {return x == tval; });
 }
