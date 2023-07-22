@@ -3,12 +3,12 @@
 
 class A {
 public:
-	~A() { std::cout << "~A() this: " << this << "\n"; }
-	A() { std::cout << "A() this : " << this << "\n"; }
-	A(int) { std::cout << "A(int) this : " << this << "\n"; }
-	A(int, int) { std::cout << "A(int, int) this : " << this << "\n"; }
-	A(double) { std::cout << "A(double) this : " << this << "\n"; }
-	A(std::string) { std::cout << "A(string) this : " << this << "\n"; }
+	~A() { std::cout << "~A() this: " << this << '\n'; }
+	A() { std::cout << "A() this : " << this << '\n'; }
+	A(int) { std::cout << "A(int) this : " << this << '\n'; }
+	A(int, int) { std::cout << "A(int, int) this : " << this << '\n'; }
+	A(double) { std::cout << "A(double) this : " << this << '\n'; }
+	A(std::string) { std::cout << "A(string) this : " << this << '\n'; }
 };
 
 int main()
