@@ -11,7 +11,7 @@ int main()
 	if constexpr (std::is_lvalue_reference_v<e(x)>) {
 		std::cout << "L value expression\n";
 	}
-	else if constexpr (std::is_lvalue_reference_v<e(x)>) {
+	else if constexpr (std::is_rvalue_reference_v<e(x)>) {
 		std::cout << "X value expression\n";	
 	}
 	else {
