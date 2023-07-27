@@ -203,7 +203,7 @@ void func(const T *p);
 Bu bildirim ile aşağıdaki bildirim arasında anlamsal bir fark olmadığını yine hatırlatayım:
 
 ```
-void func(const T *ptr);
+void func(T const *ptr);
 ```
 
 C'de böyle bir fonksiyon arayüzünün _(interface)_ anlamı şudur: Fonksiyon, adresini istediği nesneye, onun değerini okumak amacıyla yani bu değeri yapacağı işlerde kullanmak için erişecek. Böyle bir fonksiyona çağrı yaptığımızda (adresini) gönderdiğimiz nesnenin değerinin fonksiyon tarafından değiştirilmeyeceğinden emin olabiliriz. Böyle fonksiyonlara İngilizce'de duruma göre şöyle isimler yakıştırılıyor: _get function, getter, accessor_ _(erişen anlamında)_. Şimdi de neden böyle fonksiyonların tanımlandığını konuşalım...
