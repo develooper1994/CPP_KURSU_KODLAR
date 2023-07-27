@@ -8,12 +8,12 @@ C++ dilinde
 + global _const_ nesneler iç bağlantıda _(internal linkage)_ (C dilinde dış bağlantıda)
 + ilk değerini sabit ifadesi _(constant expression)_ ile almış _const_ nesnelerin oluşturduğu ifadeler sabit ifadesi olarak ele alınıyor.
 + _const T*_ türünden _T*_ türüne örtülü dönüşüm yok (C dilinde örtülü dönüşüm var).
-+ C++ dilinde _char*_ türünden değişkenlere string literalleri ile ilk değer veremeyiz. _char*_ türünden değişkenlere string literallerini atayamayız.
++ _char*_ türünden değişkenlere string literalleri ile ilk değer veremeyiz. _char*_ türünden değişkenlere string literallerini atayamayız.
 + _T_ ve _U_ farklı türler olmak üzere _T*_ türünden _U*_ türüne örtülü dönüşüm yok. (istisnalar ileride)
 + Aritmetik türler ile adres türleri arasında otomatik dönüşüm yok. (C dilinde var)
 + _T_ _void_ olmayan bir tür olmak üzere _void*_ türünden _T*_ türüne örtülü dönüşüm yok. (C dilinde var)
 + _structure, union, enum, class (user defined types)_ etiketleri _(tags)_ doğrudan türü niteleyen isimler olarak kullanılabiliyor (C dilinde türü nitelerken _struct_, _union_, _enum_ anahtar sözcüklerinin etiket _(tag)_ ile birlikte kullanılması zorunlu.
-+ C++ dilinde Programcı tarafından oluşturulan türlerin _(user defined types)_ bir öğeye sahip olması gerekmiyor. _(empty classes)_
++ Programcı tarafından oluşturulan türlerin _(user defined types)_ bir öğeye sahip olması gerekmiyor. _(empty classes)_
 + Fonksiyon tanımlarında fonksiyon parametrelerine isim vermek zorunlu değil (C dilinde zorunlu). C'de de yeni standartlarda bu durum değişiyor.
 + ```char str[4] = "mert"``` dizi boyutu ile ilk değer veren yazıdaki karater sayısı eşit ise tanım _(definition)_ geçerli değil (C dilinde geçerli).
 + aritmetik türlerden _enum_ türlerine örtülü dönüşüm yok (C dilinde var).
