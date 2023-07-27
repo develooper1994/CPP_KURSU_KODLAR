@@ -2,18 +2,18 @@
 
 class Nec {
 public:
-	constexpr Nec(long i) noexcept
+	constexpr Nec(int i) noexcept
 		: m_val{ i } {
 	}
-	
+
 	// == ve != için
-	[[nodiscard]] bool operator==(const Nec& other)const 
+	[[nodiscard]] bool operator==(const Nec& other)const noexcept
 	{
-		return m_val == other.m_val; 
+		return m_val == other.m_val;
 	}
 
 	// < <= > >= için
-	auto operator<=> (const Nec& rhs) const 
+	auto operator<=> (const Nec& rhs) const
 	{
 		return m_val <=> rhs.m_val; // defines ordering (<, <=, >, and >=)
 	}
