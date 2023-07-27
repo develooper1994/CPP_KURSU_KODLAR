@@ -4,15 +4,15 @@
 class Person
 {
 public:
+	// ...other members
 	auto operator<=>(const Person& other)const
 	{
-		//IDIYOM
 		if (auto cmp = m_first_name <=> other.m_first_name; cmp != 0)
 			return cmp;
 
 		if (auto cmp = m_last_name <=> other.m_last_name; cmp != 0)
 			return cmp;
-		
+
 		return m_id <=> other.m_id;
 	}
 private:
@@ -23,7 +23,7 @@ private:
 
 int main()
 {
-	Person p1, p2;
+	Person p1{}, p2{};
 
 	auto b1 = p1 < p2;
 	auto b2 = p1 <= p2;
