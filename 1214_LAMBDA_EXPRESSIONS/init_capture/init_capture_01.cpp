@@ -11,5 +11,5 @@ int main()
 
 	f(20);
 
-	std::cout << "ival = " << ival << "\n";
+	std::cout << "ival = " << ival << '\n';
 }
