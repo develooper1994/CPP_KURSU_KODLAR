@@ -1,8 +1,8 @@
 template <typename T = double>
 struct Nec {
-	T val;
-	Nec() : val() {}
-	Nec(T val) : val(val) {}
+	T mval;
+	Nec() : mval() {}
+	Nec(T val) : mval(val) {}
 	// ...
 };
 
