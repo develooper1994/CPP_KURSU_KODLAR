@@ -9,6 +9,6 @@ int main()
         return x * x;
     }(); 
 
-    std::cout << "y = " << y << "\n";
-    std::cout << "x = " << x << "\n";
+    std::cout << "y = " << y << '\n';
+    std::cout << "x = " << x << '\n';
 }
