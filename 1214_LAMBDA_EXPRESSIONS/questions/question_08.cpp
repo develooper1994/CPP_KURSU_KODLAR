@@ -1,3 +1,5 @@
+// ekran çıktısı ne olur?
+
 #include <iostream>
 
 int main()
