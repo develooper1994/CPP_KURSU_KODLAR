@@ -26,7 +26,7 @@ std::ostream& operator<<(std::ostream& os, const Nec& n)
 int main()
 {
 	Nec nec{ 20 };
-	std::cout << nec << "\n";
+	std::cout << nec << '\n';
 	nec.func();
-	std::cout << nec << "\n";
+	std::cout << nec << '\n';
 }
