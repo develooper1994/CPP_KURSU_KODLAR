@@ -1,3 +1,5 @@
+// ekran çıktısı ne olur?
+
 #include <iostream>
 
 int g = 99;
@@ -9,6 +11,6 @@ int main()
 {
 	g = 500;
 
-	std::cout << fx() << "\n";
-	std::cout << fy() << "\n";
+	std::cout << fx() << '\n';
+	std::cout << fy() << '\n';
 }
