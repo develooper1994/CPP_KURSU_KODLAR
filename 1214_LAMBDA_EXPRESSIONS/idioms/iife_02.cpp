@@ -1,5 +1,3 @@
-auto f = [](auto x) {}
-
 const int i = [&]{
 
     int i = some_default_value;
