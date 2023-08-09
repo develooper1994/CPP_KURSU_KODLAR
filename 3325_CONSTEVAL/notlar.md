@@ -1,4 +1,5 @@
-* **consteval** olarak nitelenen fonksiyonlar geri dönüş değerlerini derleme zamanında üretmek zorunda.
+* **consteval** fonksiyonlar _C++20_ standardı ile dile eklendi. 
+* **consteval** olarak nitelenen fonksiyonlar geri dönüş değerlerini derleme zamanında üretmek zorunda. Yani programın çalışma zamanında çağrılamıyorlar.
 * Programın çalışma zamanında değer üretmeleri / üretebilmeleri mümkün değil.
 * Bu şekilde nitelenen fonksiyonlara _"immediate function"_ da deniyor.
 * **consteval** fonksiyonlar _coroutine_ olarak kullanılamıyorlar.
