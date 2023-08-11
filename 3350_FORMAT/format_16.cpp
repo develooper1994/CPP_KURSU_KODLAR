@@ -1,20 +1,18 @@
 #include <iostream>
 #include <format>
 #include <string>
-#include <vector>
-
 
 class Person {
 public:
 	Person(std::string name, int id) : m_name(std::move(name)), m_id(id) { }
-
-	//sınıfın get funcları olacak
+	
 	std::string get_name()const { return m_name; }
 	int get_id()const { return m_id; }
 private:
 	std::string m_name;
 	int m_id;
 };
+
 template<>
 class std::formatter<Person> {
 public:
@@ -30,10 +28,10 @@ public:
 		switch (*iter)
 		{
 			//a all için, isim için n, id için i olacak.
-		case 'n': m_ftype = FormatType::Name; break;
-		case 'i': m_ftype = FormatType::Id; break;
-		case 'a': m_ftype = FormatType::All; break;
-		default: throw std::format_error{ "Person format error!" };
+			case 'n': m_ftype = FormatType::Name; break;
+			case 'i': m_ftype = FormatType::Id; break;
+			case 'a': m_ftype = FormatType::All; break;
+			default: throw std::format_error{ "Person format error!" };
 		}
 
 		++iter;
@@ -43,21 +41,23 @@ public:
 		}
 		return iter;
 	}
+
 	constexpr auto format(const Person& per, auto& context)
 	{
-		using enum FormatType; // FormatType::name yerine doğrudan name kullanabilşirim artık.İsimleri görünür yaptık.
+		using enum FormatType; 
+		
 		switch (m_ftype)
 		{
-		case Name: return std::format_to(context.out(), "{}", per.get_name());
-		case Id: return std::format_to(context.out(), "{}", per.get_id());
-		case All: return std::format_to(context.out(), "[{}, {}]", per.get_id(), per.get_name());
+			case Name: return std::format_to(context.out(), "{}", per.get_name());
+			case Id: return std::format_to(context.out(), "{}", per.get_id());
+			case All: return std::format_to(context.out(), "[{}, {}]", per.get_id(), per.get_name());
 		}
 	}
 private:
-	//Formatlamadaki 3 seçeneği tutmak için bir enum türü oluşturuyoruz
 	enum class FormatType { Name, Id, All };
 	FormatType m_ftype;
 };
+
 int main()
 {
 	Person p1{ "necati",876 };
