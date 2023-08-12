@@ -1,7 +1,8 @@
 #include <iostream>
 
 template<class F, class... Args>
-auto delay_invoke(F f, Args... args) {
+auto delay_invoke(F f, Args... args) 
+{
     return[f, args...]() -> decltype(auto) {
         return std::invoke(f, args...);
     };
@@ -19,5 +20,5 @@ int main()
     auto f = delay_invoke(foo, 1, 2, 3);
 
     auto n = f();
-    std::cout << "n = " << n << "\n";
+    std::cout << "n = " << n << '\n';
 }
