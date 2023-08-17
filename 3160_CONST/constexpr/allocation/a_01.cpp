@@ -14,7 +14,7 @@ constexpr double get_e(int n)
 
 	auto sum = std::accumulate(p, p + n, 0.);
 
-	delete p;
+	delete[] p;
 
 	return sum;
 }
