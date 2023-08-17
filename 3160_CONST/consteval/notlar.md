@@ -11,3 +11,4 @@
 * Parametre değişkenleri ve içindeki yerel değişkenler _literal type_ olmak zorunda.
 * Kısaca _constexpr_ fonksiyonlar için söz konusu olan kısıtlamalar _consteval_ fonksiyonlar için de geçerli.
 * Bir fonksiyon bildiriminde  _consteval_, _constexpr_ ve _constinit_ belirteçlerinden _(specifiers)_ yalnızca biri kullanılabilir.
+* _consteval_ bir fonksiyon _constexpr_ fonksiyona çağrı yapabilir. Ancak _constexpr_ bir fonksiyon _consteval_ bir fonksiyona çağrı yapamaz.
