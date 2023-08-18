@@ -1,6 +1,7 @@
 * _aggregate_ sınıflar kullanıcılara tüm elemanlarına (özel bir) ilk değer verme sentaksı ile erişme olanağı sağlar.
 * Bir _aggregate_, elemanların bir araya gelerek oluşturduğu basit bir veri yapısı olarak düşünülmeli.
-* aggregate sınıflar elemanları ile _invariant_'lar sağlamıyorlar. (elemanlarının değerleri hakkında bir garanti vermiyorlar) 
+* aggregate sınıflar elemanları ile _invariant_'lar sağlamıyorlar. (elemanlarının değerleri hakkında bir garanti vermiyorlar)
+* _aggregate_'ların _user-declared ctor_'ları olamaz.
 * _aggregate_'ların tüm _non static_ veri elemanları _public_ olmak zorunda.
 * _aggregate_'ların _private_ ya da _protected_ üye fonksiyonları olabilir.
 * _aggregate_'lar _static_ veri elemanlarına sahip olabilir.
