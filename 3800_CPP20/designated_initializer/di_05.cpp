@@ -3,6 +3,7 @@
 struct Nec {
 	int x;
 	int y{10}; //since C++11
+        //still aggregates C++14
 	int z;
 };
 
