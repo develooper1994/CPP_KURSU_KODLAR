@@ -10,4 +10,5 @@
 * _aggregate_'ların elemanları referans olabilir.
 * bir _aggregate type_ aynı zamanda _trivial_ ve _standard-layout type_ olabilir. Ama olmak zorunda değil.
 * _aggregate_ türlerden nesneler için her zaman _structured binding_ sentaksı kullanılabilir.
-* _lambda_ ifadelerinden elde edilen _closure type_'lar
+* _lambda_ ifadelerinden elde edilen _closure type_'lar _aggregate_ değiller.
+* _closure type_'lardan kalıtım yoluyla elde edilen sınıflar _aggregate_
