@@ -1,7 +1,5 @@
 #include <type_traits>
 #include <string>
-
-
 class A {
 public:
 	int x, y, z;
