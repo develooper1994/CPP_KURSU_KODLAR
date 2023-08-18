@@ -18,3 +18,4 @@
 * _aggregate_ türlerden nesneler için her zaman _structured binding_ sentaksı kullanılabilir.
 * _lambda_ ifadelerinden elde edilen _closure type_'lar _aggregate_ değiller.
 * _closure type_'lardan kalıtım yoluyla elde edilen sınıflar _aggregate_
+* Bir türün _aggregate_ olup olmadığı _std::is_aggregate_ meta fonksiyonu ile derleme zamanında sınanabilir. (C++17)
