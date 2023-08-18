@@ -1,5 +1,6 @@
 #include <type_traits>
 #include <string>
+
 class A {
 public:
 	int x, y, z;
@@ -10,7 +11,7 @@ class B {
 	int x;
 };
 
-class B {
+class C{
 protected:
 	int x;
 };
