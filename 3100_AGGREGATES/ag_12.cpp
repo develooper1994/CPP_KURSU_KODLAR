@@ -1,7 +1,6 @@
 #include <type_traits>
 #include <iostream>
 
-
 struct Nec {
 	int x;
 	int y = x;
