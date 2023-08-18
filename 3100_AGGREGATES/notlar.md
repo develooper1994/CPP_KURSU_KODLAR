@@ -10,6 +10,8 @@
   * aggregate'ların taban sınıflarının virtual olmaması gerekiyor. _(no virtual base class)_
 * _aggregate_'ların elemanlarının _aggregate_ olması gerekmiyor.
 * _aggregate_'ların elemanları referans olabilir.
+* aggregate'lar operator overloading mekanizmasından faydalanabilir.
+* aggregate'lar sınıf şablonu _(class template)_ olarak tanımlanabilir.
 * bir _aggregate type_ aynı zamanda _trivial_ ve _standard-layout type_ olabilir. Ama olmak zorunda değil.
 * _aggregate_ türlerden nesneler için her zaman _structured binding_ sentaksı kullanılabilir.
 * _lambda_ ifadelerinden elde edilen _closure type_'lar _aggregate_ değiller.
