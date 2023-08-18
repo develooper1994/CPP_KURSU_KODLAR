@@ -11,7 +11,8 @@
   * aggregate'ların taban sınıflarının virtual olmaması gerekiyor. _(no virtual base class)_
 * _aggregate_'ların elemanlarının _aggregate_ olması gerekmiyor.
 * _aggregate_'ların elemanları referans olabilir.
-* aggregate'lar operator overloading mekanizmasından faydalanabilir.
+* _aggregate_'lar _operator overloading_ mekanizmasından faydalanabilir.
+* _aggregate_'lar _"default member initializer"_ kullanabilir. _(C++14)_
 * aggregate'lar sınıf şablonu _(class template)_ olarak tanımlanabilir.
 * bir _aggregate type_ aynı zamanda _trivial_ ve _standard-layout type_ olabilir. Ama olmak zorunda değil.
 * _aggregate_ türlerden nesneler için her zaman _structured binding_ sentaksı kullanılabilir.
