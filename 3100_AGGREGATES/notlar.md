@@ -6,4 +6,5 @@
 * aggreagate'ların tüm _non static_ veri elemanlarının _public_ olması gerekiyor. 
 * _aggregate_'ların elemanlarının _aggregate_ olması gerekmiyor.
 * _aggregate_'ların elemanları referans olabilir.
-* bir _aggregate type_ aynı zamanda _trivial_ ve _standard-layout type_ olabilir. Ama olmak zorunda değil. 
+* bir _aggregate type_ aynı zamanda _trivial_ ve _standard-layout type_ olabilir. Ama olmak zorunda değil.
+* _aggregate_ türlerden nesneler için her zaman _structured binding_ sentaksı kullanılabilir. 
