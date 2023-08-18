@@ -5,6 +5,7 @@
 * _aggregate_'ların tüm _non static_ veri elemanları _public_ olmak zorunda.
 * _aggregate_'ların _private_ ya da _protected_ üye fonksiyonları olabilir.
 * _aggregate_'lar _static_ veri elemanlarına sahip olabilir.
+* _aggregate_'lar _user declared/defined_ atama operatör fonksiyonlarına ve _destructor_'a sahip olabilirler.
 * _aggregate_'lar sanal fonksiyonlara sahip olamaz.
 * C++17 standardı _aggregate_'ların kalıtım yoluyla elde edilmesi olanağını verdi.
   * _aggregate_'ların taban sınıflarının _aggregate_ olması gerekmiyor.
@@ -18,4 +19,4 @@
 * _aggregate_ türlerden nesneler için her zaman _structured binding_ sentaksı kullanılabilir.
 * _lambda_ ifadelerinden elde edilen _closure type_'lar _aggregate_ değiller.
 * _closure type_'lardan kalıtım yoluyla elde edilen sınıflar _aggregate_
-* Bir türün _aggregate_ olup olmadığı _std::is_aggregate_ meta fonksiyonu ile derleme zamanında sınanabilir. (C++17)
+* Bir türün _aggregate_ olup olmadığı _std::is_aggregate_ meta fonksiyonu ile derleme zamanında sınanabilir._(C++17)_
