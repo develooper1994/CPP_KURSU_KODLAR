@@ -1,5 +1,7 @@
-* _Aggregate_ sınıflar kullanıcılara tüm elemanlarına (özel bir) ilk değer verme sentaksı ile erişme olanağı sağlar.
+* _aggregate_ sınıflar kullanıcılara tüm elemanlarına (özel bir) ilk değer verme sentaksı ile erişme olanağı sağlar.
+* aggregate'ların tüm _non static_ veri elemanları _public_ olmak zorunda. 
 * C++17 standardı _aggregate_'ların kalıtım yoluyla elde edilmesi olanağını verdi.
 * _aggregate_'ların taban sınıflarının _aggregate_ olması gerekmiyor.
+* aggreagate'ların tüm _non static_ veri elemanlarının public olması gerekiyor. 
 * _aggregate_'ların elemanlarının _aggregate_ olması gerekmiyor.
-* aggregate'ların elemanları refereans olabilir.
+* _aggregate_'ların elemanları refereans olabilir.
