@@ -1,4 +1,4 @@
-// JOnathan Müller
+// Jonathan Müller
 
 template <typename Tag, typename T>
 class lazy_init
