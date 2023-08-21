@@ -38,6 +38,20 @@ int main()
     std::cout << maxValue(xp, &d) << '\n';    // maximum value of int and double pointer
 }
 
+/*
+we cannot use maxValue() to check for the maximum of two iterator values:
+std::vector coll{0, 8, 15, 11, 47};
+auto pos = std::find(coll.begin(), coll.end(), 11); // find specific value
+if (pos != coll.end()) {
+// maximum of first and found value:
+auto val = maxValue(coll.begin(), pos); // ERROR
+}
+The reason is that we require the parameters to be comparable with nullptr, which is not required to be
+supported by iterators. Whether or not this is what you want is a design question. However, this example
+demonstrates that it is important to think carefully about the definition of general concepts.
+
+
+*/
 
 
   
