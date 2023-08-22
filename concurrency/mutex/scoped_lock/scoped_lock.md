@@ -12,7 +12,7 @@ class scoped_lock;
 + parameter pack Mtx specifies types of mutexes to be locked.
 + can be used with any mutex types providing necessary locking interface (e.g., std::mutex and std::recursive_mutex)
 + Sınıfın kurucu işlevi bir ya da birden fazla mutex'i argüman olarak alabilir.
-+ mutexes acquired in constructor and released in destructor
++ Sınıfın kurucu işlevi ile edinilen mutex sınıfın destructor'ı ile bırakılır.
 + scoped_lock nesneleri kopyalanamaz ve taşınamaz (non-copyable / non-moveable)
 + using scoped_lock avoids problem of inadvertently failing to release mutexes (e.g., due to exception or forgetting unlock calls)
 + in multiple mutex case, employs deadlock avoidance algorithm from std::lock (discussed later) when acquiring mutexes
