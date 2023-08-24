@@ -1,12 +1,12 @@
 #include <concepts>
 #include <iterator>
 
-
 template <typename T>
 concept has_at = requires(T t, int i)
 {
 	t.at(i);
 };
+
 template <typename T>
 concept has_iterator = requires(T t)
 {
