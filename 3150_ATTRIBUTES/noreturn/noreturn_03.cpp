@@ -1,7 +1,6 @@
 #include <stdexcept>
 #include <iostream>
 
-
 [[noreturn]]
 void foo()
 {
@@ -15,7 +14,7 @@ void func()
 		//unreachable code
 	}
 	catch (const std::exception& ex) {
-		std::cout << "hata yakalandi : " << ex.what() << "\n";
+		std::cout << "hata yakalandi : " << ex.what() << '\n';
 		//reachable code
 	}
 }
