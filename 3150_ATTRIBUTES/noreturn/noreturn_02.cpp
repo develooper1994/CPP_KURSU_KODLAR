@@ -1,6 +1,5 @@
 #include <iostream>
 
-
 [[noreturn]] void foo();
 
 int main()
