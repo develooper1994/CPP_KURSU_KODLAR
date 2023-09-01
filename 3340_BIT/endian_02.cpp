@@ -3,12 +3,12 @@
 void func()
 {
 	if constexpr (std::endian::native == std::endian::little) {
-		//if the system is little endian
+		//if the execution environment is little endian
 	}
 	else if (std::endian::native == std::endian::big) {
-		//if the system is big endian
+		//if the execution environment is big endian
 	}
 	else {
-		// if the system is mixed
+		// if the execution environment is mixed
 	}
 }
