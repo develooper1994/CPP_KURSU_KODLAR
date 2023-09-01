@@ -16,6 +16,4 @@ int main()
 {
 	old_version::legacy_func(); //compiler diagnostic
 }
-© 2021 GitHub, Inc.
-Terms
-Priv
+
