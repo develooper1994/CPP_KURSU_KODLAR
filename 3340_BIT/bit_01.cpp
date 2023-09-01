@@ -1,8 +1,5 @@
-// raw code
-
 #include <iostream>
 #include <format>
-#include <bitset>
 #include <bit>
 
 int main()
