@@ -1,3 +1,4 @@
+
 namespace nec {
 	class Erg {
 	public:
@@ -9,4 +10,5 @@ namespace nec {
 int main()
 {
 	auto x = nec::yellow;
+	nec::color nc; //invalid
 }
