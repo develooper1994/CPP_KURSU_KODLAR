@@ -1,17 +1,19 @@
 #include <vector>
 #include <string>
-#include "nutility.h" //rname, print
 #include <ranges>
+#include <iostream>
 
 int main()
 {
 	using namespace std;
 
-	vector<string> svec;
-	rfill(svec, 30, rname);
-
-	print(svec);
-
+	vector<string> svec{ "ali", "mert", "can", "zeynep", "melike", "aykut", "necati", "tamer", "emre", "ahmet"};
+	
 	for (const auto& s : views::filter(svec, [](const auto& s) { return s.length() % 2 == 0; }))
-		cout << s << '\n'; // Uzunluğu çift olanlar yazılacak
+		cout << s << ' '; // Uzunluğu çift olanlar yazılacak
+
+	cout << '\n';
+
+	for (const auto& s : views::filter(svec, [](const auto& s) { return s[0] == 'a'; }))
+		cout << s << ' '; // a ile başlayanlar yazılacak
 }
