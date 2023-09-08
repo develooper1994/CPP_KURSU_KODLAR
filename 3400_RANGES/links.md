@@ -6,8 +6,10 @@
 
 [](https://www.cppstories.com/2022/ranges-composition/)
 
-[](https://brevzin.github.io/c++/2023/03/14/prefer-views-meow/)
+[revzin](https://brevzin.github.io/c++/2023/03/14/prefer-views-meow/)
 
-[](http://becpp.org/blog/wp-content/uploads/2019/10/Arno-Schoedl-From-Iterators-To-Ranges.pdf)
+[becpp](http://becpp.org/blog/wp-content/uploads/2019/10/Arno-Schoedl-From-Iterators-To-Ranges.pdf)
 
-[](https://www.think-cell.com/en/career/talks/better-ranges#111)
+[xx](https://www.think-cell.com/en/career/talks/better-ranges#111)
+
+https://www.reedbeta.com/blog/ranges-compatible-containers/
