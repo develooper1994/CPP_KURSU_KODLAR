@@ -11,5 +11,5 @@ Nec foo();
 
 int main()
 {
-	foo() = foo(); //gecersiz
+	foo() = foo(); //error
 }
