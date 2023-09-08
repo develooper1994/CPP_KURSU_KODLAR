@@ -1,6 +1,6 @@
 class Nec {
 public:
 	void foo()&;
-	void foo() const; // gecersiz
-	//reference qualified fonksiyon reference qualified olmayan fonksiyon ile yüklenemez.
+	void foo() const; // invalid
+	//reference qualified member function cannot overload reference unqualified one.
 };
