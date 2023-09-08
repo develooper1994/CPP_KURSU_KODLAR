@@ -2,6 +2,6 @@
 
 [Rvalue Ranges and Views in C++20](https://tristanbrindle.com/posts/rvalue-ranges-and-views)
 
-(https://mariusbancila.ro/blog/2019/01/20/cpp-code-samples-before-and-after-ranges/)
+[](https://mariusbancila.ro/blog/2019/01/20/cpp-code-samples-before-and-after-ranges/)
 
-(https://www.cppstories.com/2022/ranges-composition/)
+[](https://www.cppstories.com/2022/ranges-composition/)
