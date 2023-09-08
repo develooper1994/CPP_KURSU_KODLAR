@@ -1,11 +1,12 @@
 #include <vector>
+#include <string>
 
 class Person {
 public:
 	//...
 	std::string get_name()const
 	{
-		return m_name; //her çağrıda kopyalamaya neden olacak.#include <string>
+		return m_name; //causes copying at each call.
 	}
 private:
 	std::string m_name;
