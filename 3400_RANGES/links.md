@@ -5,3 +5,7 @@
 [](https://mariusbancila.ro/blog/2019/01/20/cpp-code-samples-before-and-after-ranges/)
 
 [](https://www.cppstories.com/2022/ranges-composition/)
+
+[](https://brevzin.github.io/c++/2023/03/14/prefer-views-meow/)
+
+[](http://becpp.org/blog/wp-content/uploads/2019/10/Arno-Schoedl-From-Iterators-To-Ranges.pdf)
