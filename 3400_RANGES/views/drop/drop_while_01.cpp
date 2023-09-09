@@ -1,9 +1,9 @@
 #include <list>
 #include <string>
-#include "nutility.h"
+#include "nutility.h" //rfill, print
 #include <iostream>
 #include <ranges>
-#include <iomanip>
+#include <iomanip> //quoted
 
 int main()
 {
@@ -11,14 +11,14 @@ int main()
 
 	list<string> slist;
 
-	rfill(slist, 20, rname); //listeye 20 tane rastgele isim ekleniyor nutility.h
-	print(slist); //nutility.h
+	rfill(slist, 20, rname); 
+	print(slist); 
 	size_t len;
-	cout << "uzunluk değeri girin: ";
+	cout << "enter name length: ";
 	cin >> len;
 
-	auto v = views::drop_while(slist, 
+	auto v = views::drop_while(slist,
 		[len](const string& s) {return s.size() > len; });
-	ranges::for_each(v, 
+	ranges::for_each(v,
 		[](const auto& s) {cout << quoted(s) << " "; });
 }
