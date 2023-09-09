@@ -2,6 +2,8 @@
 #include <vector>
 #include <string>
 #include <iostream>
+#include <algorithm>
+#include <iterator>
 
 int main(void)
 {
@@ -9,8 +11,11 @@ int main(void)
 
 	vector<string> svec{ "murat", "mert", "gul",
 		"nihat", "cevahir", "jale", "seyhan" };
+	
+	ranges::copy(svec, ostream_iterator<string>(cout, " "));
+	std::cout << '\n';
 
-	for (auto rn : std::views::slide(svec, 2)) { 
+	for (auto rn : std::views::slide(svec, 3)) { 
 		for (const auto& s : rn) {
 			cout << s << " ";
 		}
