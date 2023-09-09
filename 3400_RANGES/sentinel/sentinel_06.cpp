@@ -14,6 +14,8 @@ int main()
 	mt19937 eng{ random_device{}() };
 	shuffle(ivec.begin(), ivec.end(), eng);
 
-	auto iter = ranges::find(ivec, 67);
+	//auto iter = ranges::find(ivec, 67);
+	auto iter = ranges::find(ivec.begin(), unreachable_sentinel, 56);
+
 	cout << iter - ivec.begin();
 }
