@@ -2,7 +2,7 @@
 #include <iostream>
 
 template<typename Iter, typename Sentinel, typename Init, typename Op = std::plus<>>
-	requires std::input_iterator<Iter> && std::sentinel_for<Iter, Sentinel>
+	requires std::input_iterator<Iter> && std::sentinel_for<Iter, Sentinel> //requires clause
 Init Accumulate(Iter beg, Sentinel end, Init init, Op op = {})
 {
 	while (beg != end)
